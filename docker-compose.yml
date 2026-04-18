@@ -1,12 +1,7 @@
-version: '3.8'
-services:
-  idrac-fan-ui:
-    image: idrac-fan-ui:latest # 请替换为实际镜像名
-    container_name: idrac-fan-ui
-    ports:
-      - "18080:8080"
-    volumes:
-      - ./data:/app/data
-    devices:
-      - /dev/ipmi0:/dev/ipmi0 # 仅在需要本地模式时保留
-    restart: unless-stopped
+docker run -d \
+  --name idrac-fan-ui \
+  -p 18080:8080 \
+  --device /dev/ipmi0:/dev/ipmi0 \
+  -v ./data:/app/data \
+  --restart unless-stopped \
+  monsterx520/idrac_fan_control_ui:latest
