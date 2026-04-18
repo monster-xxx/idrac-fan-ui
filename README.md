@@ -1,4 +1,5 @@
 <img width="1083" height="913" alt="image" src="https://github.com/user-attachments/assets/3f90bdd4-36f0-4ec7-89dd-7de40d147391" />
+https://hub.docker.com/r/monsterx520/idrac_fan_control_ui
 ✨ 核心特性
 📊 可视化运行看板：并发拉取并展示实时最高温度、风扇均速 (RPM) 以及整机实时功耗 (Watts)。
 
